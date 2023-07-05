@@ -5,6 +5,9 @@ import { Perf } from "r3f-perf";
 
 const AudioPlayer = loadable(() => import("../audio/AudioPlayer"));
 
+const mode = import.meta.env.VITE_APP_MODE;
+const audioSource = import.meta.env.VITE_AUDIO_SOURCE;
+
 const Home = () => {
   // eslint-disable-next-line no-unused-vars
   const [ videoRef, webcamTensor ] = useWebcam({ height: 224, width: 224 });
@@ -15,7 +18,10 @@ const Home = () => {
         style={css.video}
         ref={videoRef} 
       /> 
-      <AudioPlayer >
+      <AudioPlayer 
+        startMode={mode} 
+        audioSource={audioSource}
+      >
         <Perf  
           position="bottom-right"
           antialias={true}

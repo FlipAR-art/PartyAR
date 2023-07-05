@@ -40,14 +40,14 @@ const getCanvasComponent = (mode, children) => {
 };
 
 // eslint-disable-next-line react/prop-types
-const AudioPlayer = ({children}) => {
+const AudioPlayer = ({startMode, audioSource, children}) => {
   const modeParam = new URLSearchParams(document.location.search).get("mode");
   const { mode } = useControls({
     mode: {
       value:
         modeParam && AVAILABLE_MODES.includes(modeParam)
           ? modeParam
-          : AVAILABLE_MODES[0],
+          : startMode && startMode === 'audio' ? AVAILABLE_MODES[2] : AVAILABLE_MODES[0] ,
       options: AVAILABLE_MODES.reduce(
         (o, mode) => ({ ...o, [getAppModeDisplayName(mode)]: mode }),
         {}

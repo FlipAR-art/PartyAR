@@ -6,10 +6,10 @@ const LivestreamAudioControls = ({ audio }: AudioSourceControlsProps) => {
   const { streamUrl } = useControls({
     Audio: folder({
       streamUrl: {
-        value: "http://igor.torontocast.com:1950/stream",
+        value: "https://icecast.radiofrance.fr/fipelectro-midfi.mp3",
         options: {
-          Default: "http://igor.torontocast.com:1950/stream",
-          //Ice: "https://icecast2.ufpel.edu.br/live" // DEAD
+          Default: "https://icecast.radiofrance.fr/fipelectro-midfi.mp3",
+          Ice: "https://icecast.radiofrance.fr/fipelectro-midfi.mp3",
           Estilo:
             "https://us4.internet-radio.com/proxy/radioestiloleblon?mp=/stream",
           // LoFi: "http://192.95.39.65:5607/stream/1/",

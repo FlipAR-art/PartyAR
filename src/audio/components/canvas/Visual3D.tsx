@@ -87,11 +87,11 @@ const Visual3DCanvas = ({ mode, children }: Visual3DCanvasProps) => {
       ref={visualRef}
       // style={css.canvas}
       camera={{
-        // fov: 45,
-        // near: 1,
-        // far: 1000,
-        // position: [-17, -6, 6.5],
-        // up: [0, 0, 1],
+        fov: 45,
+        near: 1,
+        far: 1000,
+        position: [-17, -6, 6.5],
+        up: [0, 0, 1],
       }}
       gl={{
         antialias: true,

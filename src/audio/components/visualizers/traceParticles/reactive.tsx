@@ -38,7 +38,7 @@ const TraceParticlesVisual = ({ coordinateMapper }: VisualProps) => {
         pointSize={pointSize}
         transitionSpeedSec={transitionSpeed}
       />
-      <Ground position={new Vector3(0, 0, -1.5 * coordinateMapper.amplitude)} />
+      {/* <Ground position={new Vector3(0, 0, -1.5 * coordinateMapper.amplitude)} /> */}
     </>
   );
 };

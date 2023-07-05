@@ -47,11 +47,11 @@ const SphereVisual = ({
         cubeSideLength={cubeSideLength}
         palette={palette}
       />
-      <Ground
+      {/* <Ground
         position={
           new Vector3(0, 0, -radius * (1 + 0.25 * coordinateMapper.amplitude))
         }
-      />
+      /> */}
     </>
   );
 };

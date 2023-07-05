@@ -47,7 +47,7 @@ const CubeVisual = ({
         volume={volume}
         palette={palette}
       />
-      <Ground
+      {/* <Ground
         position={
           new Vector3(
             0,
@@ -55,7 +55,7 @@ const CubeVisual = ({
             -0.75 * nPerSide * (1 + cubeUnitSpacingScalar) * cubeUnitSideLength
           )
         }
-      />
+      /> */}
     </>
   );
 };

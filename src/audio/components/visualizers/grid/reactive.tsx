@@ -52,7 +52,7 @@ const GridVisual = ({
         cubeSpacingScalar={gridUnitSpacingScalar}
         palette={palette}
       />
-      <Ground position={new Vector3(0, 0, -2.5 * coordinateMapper.amplitude)} />
+      {/* <Ground position={new Vector3(0, 0, -2.5 * coordinateMapper.amplitude)} /> */}
     </>
   );
 };
